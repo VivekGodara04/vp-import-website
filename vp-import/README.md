@@ -79,3 +79,4 @@ lib/
 - Update `SITE.url` in `lib/constants.ts` to your live domain.
 - Swap in real company photography where you'd like more than icon-driven
   visuals (e.g. a warehouse or team photo on the About page).
+
