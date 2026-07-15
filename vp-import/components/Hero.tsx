@@ -23,9 +23,9 @@ export default function Hero() {
         <StockImage
           src="/images/hero-port.jpg"
           alt=""
-          className="h-full w-full object-cover opacity-[0.14]"
+          className="h-full w-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/70 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/35 via-white/50 to-white" />
       </div>
 
       <GlowRoute />
