@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #16263a;
+}
+
+::selection {
+  background-color: #c9922f;
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Glassmorphism card, light-theme version: soft white card + gentle shadow */
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(22, 38, 58, 0.08);
+  box-shadow: 0 4px 28px -10px rgba(22, 38, 58, 0.12);
+}
+
+.glass:hover {
+  border-color: rgba(201, 146, 47, 0.4);
+}
+
+/* Manifest-style eyebrow label, echoes customs/shipping document stamps */
+.manifest-label {
+  font-family: var(--font-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #a9772e;
+}
+
+.stamp-border {
+  border: 1px dashed rgba(169, 119, 46, 0.45);
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #c9922f;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(120deg, #c9922f, #a9772e 50%, #d9591f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.container-px {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .container-px {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
