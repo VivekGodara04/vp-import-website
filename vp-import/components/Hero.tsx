@@ -23,7 +23,7 @@ export default function Hero() {
         <StockImage
           src="/images/hero-port.jpg"
           alt=""
-          className="h-full w-full object-cover opacity-40"
+          className="h-full w-full object-cover opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/35 via-white/50 to-white" />
       </div>
