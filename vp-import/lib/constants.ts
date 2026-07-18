@@ -4,7 +4,10 @@ export const SITE = {
   tagline: "Your Trusted Import Partner Between China & India",
   phoneDisplay: "+91 98120 05254",
   phoneWhatsapp: "919812005254",
-  url: "https://www.vpimport.in",
+  phoneDisplaySecondary: "+91 72060 14223",
+  emailInfo: "info@vpimport.com",
+  emailSupport: "customersupport@vpimport.com",
+  url: "https://vpimport.com",
   facebook: "https://www.facebook.com/share/1HKBdYpTgT/",
   instagram: "https://www.instagram.com/navsheoran_official",
 };

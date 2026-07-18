@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, Facebook, Instagram, MapPin } from "lucide-react";
+import { Phone, Facebook, Instagram, MapPin, Mail } from "lucide-react";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { SITE, waLink } from "@/lib/constants";
 
@@ -15,6 +15,24 @@ const CHANNELS = [
     label: "Phone / WhatsApp",
     value: SITE.phoneDisplay,
     href: waLink(),
+  },
+  {
+    icon: Phone,
+    label: "Alternate Contact",
+    value: SITE.phoneDisplaySecondary,
+    href: `tel:+${SITE.phoneDisplaySecondary.replace(/\s/g, "")}`,
+  },
+  {
+    icon: Mail,
+    label: "General Enquiries",
+    value: SITE.emailInfo,
+    href: `mailto:${SITE.emailInfo}`,
+  },
+  {
+    icon: Mail,
+    label: "Customer Support",
+    value: SITE.emailSupport,
+    href: `mailto:${SITE.emailSupport}`,
   },
   {
     icon: Facebook,

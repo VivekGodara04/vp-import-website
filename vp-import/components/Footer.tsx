@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Instagram, Ship, Phone } from "lucide-react";
+import { Facebook, Instagram, Ship, Phone, Mail } from "lucide-react";
 import { NAV_LINKS, SERVICES, SITE, waLink } from "@/lib/constants";
 
 export default function Footer() {
@@ -77,15 +77,24 @@ export default function Footer() {
           <p className="text-xs text-ivory/40">
             © {year} {SITE.legalName}. All rights reserved.
           </p>
-          <a
-            href={waLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-xs text-ivory/50 hover:text-gold-400"
-          >
-            <Phone size={13} />
-            {SITE.phoneDisplay}
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+            <a
+              href={waLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-xs text-ivory/50 hover:text-gold-400"
+            >
+              <Phone size={13} />
+              {SITE.phoneDisplay}
+            </a>
+            <a
+              href={`mailto:${SITE.emailInfo}`}
+              className="flex items-center gap-2 text-xs text-ivory/50 hover:text-gold-400"
+            >
+              <Mail size={13} />
+              {SITE.emailInfo}
+            </a>
+          </div>
         </div>
       </div>
     </footer>
