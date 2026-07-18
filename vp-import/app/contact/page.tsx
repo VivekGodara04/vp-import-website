@@ -99,7 +99,7 @@ export default function ContactPage() {
                   <p className="mt-4 font-mono text-xs uppercase tracking-widest text-ivory/45">
                     {c.label}
                   </p>
-                  <p className="mt-1 font-display text-base font-medium text-ivory">
+                  <p className="mt-1 break-words font-display text-base font-medium text-ivory">
                     {c.value}
                   </p>
                 </>
